@@ -779,6 +779,86 @@ body {
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
+/* Reviews Section */
+.reviews {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.reviews h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1e3c72;
+}
+
+.reviews .section-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.review-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #ff6b35;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.reviewer-info h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e3c72;
+    margin: 0 0 0.5rem 0;
+}
+
+.reviewer-info p {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.stars {
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+.review-card p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.review-date {
+    color: #999;
+    font-size: 0.9rem;
+    text-align: right;
+}
+
 /* WhatsApp Guide Section */
 .whatsapp-guide {
     padding: 80px 0;
@@ -1258,6 +1338,11 @@ body {
         gap: 2rem;
     }
     
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
     .faq-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -1298,7 +1383,8 @@ body {
     .about-text h2,
     .contact h2,
     .faq h2,
-    .whatsapp-guide h2 {
+    .whatsapp-guide h2,
+    .reviews h2 {
         font-size: 2rem;
     }
     
